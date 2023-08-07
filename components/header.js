@@ -11,19 +11,19 @@ export default function Header() {
                     <Image src='/img/logo.svg' alt='imagen logotipo' width={300} height={40} priority={true} /> 
                 </Link>
                 
-                <nav className='mt-10 md:mt-0 text-white flex gap-8 text-base font-semibold'>
+                <nav className='mt-10 md:mt-0 text-white flex gap-8 text-3xl font-semibold'>
                     <Link href='/' className={`p-1 rounded hover:bg-amber-500 transition duration-300 ${router.pathname === '/' ? 'bg-amber-500' : ''}`}>
                         Inicio
                     </Link>
                     <Link href='/us' className={`p-1 rounded hover:bg-amber-500 transition duration-300 ${router.pathname === '/us' ? 'bg-amber-500' : ''}`}>
                         Nosotros
                     </Link>
-                    <Link href='/blog' className={`p-1 rounded hover:bg-amber-500 transition duration-300 ${router.pathname === '/blog' ? 'bg-amber-500' : ''}`}>
-                        Blog
-                    </Link>
                     <Link href='/store' className={`p-1 rounded hover:bg-amber-500 transition duration-300 ${router.pathname === '/store' ? 'bg-amber-500' : ''}`}>
                         Tienda
                     </Link>
+                    <Link href='/blog' className={`p-1 rounded hover:bg-amber-500 transition duration-300 ${router.pathname === '/blog' ? 'bg-amber-500' : ''}`}>
+                        Blog
+                    </Link>      
                 </nav>
             </div>
         </header>

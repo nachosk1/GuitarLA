@@ -2,20 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .header {
   background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(../public/img/header.jpg);
+}
+
+.contain {
+  width: min(95%, 120rem);
+  margin: 3rem auto;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  margin: 4rem 0;
 }
