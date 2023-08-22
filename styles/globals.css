@@ -31,3 +31,10 @@ body{
   font-weight: 900;
   margin: 4rem 0;
 }
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  font-size: 1.8rem;
+}

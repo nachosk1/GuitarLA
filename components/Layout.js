@@ -10,9 +10,11 @@ export default function Layout({ children, title = '', description = '' }) {
                 <title>{`GuitarLa - ${title}`}</title>
                 <meta name="description" content={description} />
             </Head>
-            <Header />
-            {children}
-            <Footer />
+            <div className="min-h-screen flex flex-col w-full justify-between">
+                <Header />
+                {children}
+                <Footer />
+            </div>
         </>
     )
 }

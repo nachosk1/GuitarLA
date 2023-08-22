@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 export default function Header() {
     const router = useRouter()
     return (
-        <header className='header py-10 bg-cover bg-center mx-auto'>
+        <header className='header w-full py-10 px-8 bg-cover bg-center mx-auto'>
             <div className='container flex md:flex-row md:justify-between flex-col items-center mx-auto'>
                 <Link href={'/'}>
                     <Image src='/img/logo.svg' alt='imagen logotipo' width={300} height={40} priority={true} /> 
