@@ -10,7 +10,7 @@ export default function Store({ guitars }) {
             description={'Tienda virtual, venta de guitarras, instrumentos, GuitarLA'}
         >
             <main className='container mx-auto px-4'>
-                <h1 className='heading text-primary'>Nuestra Colección</h1>
+                <h1 className='heading text-primary'>Tienda</h1>
                 <div className='grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3'>
                     {guitars?.map(guitar => (
                         <Guitar
