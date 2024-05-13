@@ -15,7 +15,7 @@ export default function Store({ guitars }) {
                     {guitars?.map(guitar => (
                         <Guitar
                             key={guitar.id}
-                            guitar={guitar}
+                            guitar={guitar.attributes}
                         />
                     ))}
                 </div>
