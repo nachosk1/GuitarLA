@@ -6,7 +6,7 @@ export default function Guitar({ guitar }) {
     const { description, image, name, price, url } = guitar
     return (
         <div className='grid lg:grid-cols-2 gap-4 place-items-center items-center max-w-[70rem] m-auto'>
-            <Image src={image.data.attributes.formats.medium.url} width={100} height={100} alt={`Imagen guitarra ${name}`} className='w-64 '/>
+            <Image src={image} width={100} height={100} alt={`Imagen guitarra ${name}`} className='w-64 '/>
             <div className='p-4 lg:w-64 xl:w-full overflow-hidden'>
                 <h3 className='text-5xl uppercase text-primary mb-8 font-semibold'>{name}</h3>
                 <p className='description'>{description}</p>
